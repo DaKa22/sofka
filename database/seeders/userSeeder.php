@@ -31,11 +31,24 @@ class userSeeder extends Seeder
                 'nombre' => 'Django',
                 'puntos' => 300
             ],
+            [
+                'nombre' => 'Lokillo',
+                'puntos' => 200
+            ],
+            [
+                'nombre' => 'Simon Bolivar',
+                'puntos' => 150
+            ],
+            [
+                'nombre' => 'Mio Cid Campeador',
+                'puntos' => 149
+            ],
         ];
         foreach ($Users as  $User) {
             $nuevo = new User();
             $nuevo->nombre = $User['nombre'];
             $nuevo->puntos = $User['puntos'];
+            $nuevo->termino=true;
             $nuevo->save();
         }
     }

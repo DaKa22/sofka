@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->bigInteger('puntos');
+            $table->boolean('termino');
             $table->timestamps();
         });
     }
