@@ -8,19 +8,32 @@
 </p>
 
 ## Intrucciones de instalacion
-Instalar Xampp
-Descomentar los drivers de MySQL del archivo php.ini
-Instalar composer
-iniciar servicios PHP y MySQL en XAMPP
-crear base de datos en Mysql con el nombre "sofka"
-Descargar repositorio https://github.com/DaKa22/sofka.git
-Duplicar el archivo .env.example y cambiar el nombre a .env
-abrir terminal
-artisan key:generate
-ingresar el comando: composer install
-ingresar el comando: php artisan migrate:fresh --seed
-ingresar el comando: php artisan serve
-abrir en el navegalor el localhost:8000
+<br>
+1.Instalar Xampp
+<br>
+2.Descomentar los drivers de MySQL del archivo php.ini
+<br>
+3.Instalar composer
+<br>
+4.iniciar servicios PHP y MySQL en XAMPP
+<br>
+5.crear base de datos en Mysql con el nombre "sofka"
+<br>
+6.Descargar repositorio https://github.com/DaKa22/sofka.git
+<br>
+7.Duplicar el archivo .env.example y cambiar el nombre a .env
+<br>
+8.abrir terminal
+<br>
+9.artisan key:generate
+<br>
+10.ingresar el comando: composer install
+<br>
+11.ingresar el comando: php artisan migrate:fresh --seed
+<br>
+12.ingresar el comando: php artisan serve
+<br>
+13.abrir en el navegalor el localhost:8000
 
 
 ## License
