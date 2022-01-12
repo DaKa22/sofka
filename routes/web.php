@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [indexController::class, 'index'])->name('index');
 Route::post('/', [indexController::class, 'Crear_User'])->name('Crear_User');
-Route::get('siguienteronda/{users_id}/{respuestas_id}', [indexController::class, 'siguienteronda'])->name('siguienteronda');
-Route::get('salir/{id}', [indexController::class, 'salir'])->name('salir');
-Route::get('gameover', [indexController::class, 'gameover'])->name('gameover');
+Route::get('/siguienteronda/{users_id}/{respuestas_id}', [indexController::class, 'siguienteronda'])->name('siguienteronda');
+Route::get('/salir/{id}', [indexController::class, 'salir'])->name('salir');
+Route::get('/gameover', [indexController::class, 'gameover'])->name('gameover');
 Route::post('validar/{respuestas_id}/{users_id}', [indexController::class, 'validar'])->name('validar');
