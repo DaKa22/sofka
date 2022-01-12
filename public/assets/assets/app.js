@@ -3,8 +3,9 @@ $.ajaxSetup({
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
 });
-const ruta ='http://daka.ga'
+// const ruta ='http://daka.ga'
 // const ruta ='http://127.0.0.1:8000'
+const ruta = window.location.origin;
 function salir(id) {
     if (confirm('¿Estas seguro de Salir?')) {
         window.location.href = '/salir/' + id;
