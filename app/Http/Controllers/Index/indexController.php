@@ -46,7 +46,8 @@ class indexController extends Controller
                 ->where('categorias_id', 1)
                 ->inRandomOrder()
                 ->first();
-            return view('layouts.game.game1', ['user' => $user, 'pregunta' => $pregunta]);
+                // ['user' => $user, 'pregunta' => $pregunta]
+            return view('layouts.game.game1', compact('user', 'pregunta'));
         } catch (QueryException $e) {
             return response()->json([
                 'status' => 500,

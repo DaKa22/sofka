@@ -35,11 +35,10 @@
                         <input type="text" name="nombre" id="nombre" class=" form-control" required>
                     </div>
                     <div class="col-md-4">
-                        <button type="submit" id="registrar" name="Registrar"
-                            class="btn btn-outline-success ">Registrar</button>
+                        <button type="submit" id="registrar" name="Registrar" class="btn btn-outline-success ">Registrar</button>
                     </div>
                 </div>
-        </div>
+            </div>
         </form>
     </div>
 </div>
